@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Monokai",
+  "vscode-edge-devtools.mirrorEdits": true,
+  "liveSassCompile.settings.showOutputWindow": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.renderControlCharacters": false
+  
+}

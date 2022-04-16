@@ -1,0 +1,142 @@
+:root{
+    --a:2.5px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto ;
+    gap: 20px;
+}
+.card-menu{
+    border-radius: 5px;
+    overflow: hidden;
+    height: 85px;
+    position: relative;}
+.innercard{
+    border-radius: 5px;
+        /*size*/
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 5px;
+        /*front-back*/
+    transition: 1s;
+        /*center*/
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;}
+.day.time .innercard{
+    left: -20px;
+    top: -20px;
+}
+.dish .innercard {
+    position: absolute;
+}
+
+.day.time .innercard,
+.day .innercard,
+.time .innercard{
+    background-color:var(--main);
+    color: var(--white);
+    font-size: 15px;}
+    
+.static {
+    background-color:var(--front);
+    color: var(--white);}
+/* add */
+.add{
+    background-color:rgba(139, 165, 121, 0);
+    color: rgba(42, 88, 65, 0);
+    border: 3px dotted rgba(42, 88, 65, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;}
+.add h6{
+    text-align: center;  
+    font-size: 15px;
+    left: 30px;}
+.add:hover{
+    color: rgba(42, 88, 65, 0.356);
+    border: 3px dotted rgba(42, 88, 65, 0.356);
+    box-shadow:none;
+    cursor: pointer;
+    }
+/* title and data */
+
+.innercard.title{
+    background-color:var(--front);
+    color: #596251;
+    display:block;
+}
+.innercard.data{
+    display:none;
+    /*	display: none;*/
+    transition: all 0.5s ease-in-out; 
+    -moz-transition: all 0.4s;
+    color: #75523F;
+    background-color: var(--back);
+
+}
+.data .shoplist{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    right: 10px;
+    bottom:35px;
+    padding: 2px;
+    font-size: 11px;
+}
+.dish .card-menu{
+    box-shadow: 2.5px 2.5px 5px 0px rgb(87, 85, 85);
+}
+
+.card-menu.time:hover,
+.card-menu.day:hover{
+    box-shadow: 2.5px 2.5px 5px 0px rgb(87, 85, 85);
+}
+.card-menu:hover>.add{
+    box-shadow: none;
+}
+.menu-ion{
+    border-radius: 50%;
+    background-color: rgba(240, 255, 255, 0);
+    padding: 3px;
+    margin: 2.5px;
+    display: block;
+    color: rgba(0, 0, 0, 0.007);
+    bottom: 5px;
+    z-index: 5;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    justify-content: space-between;
+}
+
+.dish ion-icon:hover{
+    color: rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    background-color: rgba(240, 255, 255, 0.5);
+}
+ion-icon#title{
+    left: 5%;
+}
+ion-icon#info-modal{
+    left: 22%;
+}
+ion-icon#data{
+    left:40%;
+}
+ion-icon#edit{
+    left: 58%;
+}
+ion-icon#delete{
+    right: 5%;
+}
+ion-icon#title.active,
+ion-icon#info.active,
+ion-icon#data.active{
+    color: rgba(255, 255, 255, 0.377);
+}

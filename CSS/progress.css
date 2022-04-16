@@ -1,0 +1,44 @@
+.progress-bar{
+    /* position:relative; */
+    width:90%;
+    height: 24px;
+    background-color:rgb(233, 213, 213);
+    margin: 2px;
+}
+.progress-multiple{
+    display:inline-flex;
+}
+.progress{
+    color:white;
+    text-align:center;
+    /* position:absolute; */
+    height: 24px;
+}
+.progress-water{
+    background-color:blue;
+}
+.progress-cellulose{
+    background-color:greenyellow;
+}
+.progress-vit{
+    background-color:goldenrod;
+}
+.progress-min{
+    background-color:silver;
+}
+.progress-carb{
+    background-color:rgb(126, 187, 206);
+}
+.progress-protein{
+    background-color:rgb(200, 135, 202);
+}
+.progress-fat{
+    background-color:rgb(189, 182, 120);
+}
+.grid-2{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.grid-2 .progress{
+    position:absolute;
+}

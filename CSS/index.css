@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin);
+@import url(preloader.css);
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu',sans-serif;
+}
+:root{
+    --shadow:0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    
+    --main:#00000000;
+    --main2:#00000000;
+    --main3:#00000000;
+    --front:#00000000;
+    --back:#00000000;
+    --text:var(--main);
+    --hover:#1515857c;
+    --white:#ffffff;
+    --white-r:#0000009c;
+    --grey:#808080;
+    --black1:#222;
+    --black2:#999;
+}
+/*??html size?*/
+html{
+    width: 1368px;
+    height: inherit;
+} 
+body{
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    background-color: var(--white);
+}
+.page{
+    margin: 20px;
+}
+.card{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    perspective: 1000px;
+}
+hr{
+    margin: 5px;
+    color: var(--main);
+}
+iframe{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}

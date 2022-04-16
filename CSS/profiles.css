@@ -1,0 +1,88 @@
+.container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.card-prof{
+    color: black;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
+    
+}
+.card-prof span.line{
+    display: flex;
+    width: 100%;
+}
+.card-prof p.num{
+    position: absolute;
+    right: 30px;
+}
+.face{
+    top:30px;
+    position: absolute;
+    padding: 3% 4%;
+    width: 100%;
+    height: 100%;
+}
+.addition {
+    width: 100%;
+    height: 100%;
+
+    color:var(--white);
+    position: absolute;
+    top: 30px;
+    left: -100%;
+    padding: 3% 4%;
+    /*	display: none;*/
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.4s;
+    
+}
+.card-prof:hover{
+    background: var(--main);
+    color: var(--white);
+}
+.card-prof:hover .addition{
+    top:30px;
+    left:0;
+    display: block;
+    
+}
+.card-prof:hover .face{
+    top:30px;
+    left:100%;
+    display: block;
+    /*visibility: hidden;*/
+}
+.card-add{
+    background-color:rgba(139, 165, 121, 0);
+    color: rgba(42, 88, 65, 0);
+    border: 3px dotted rgba(42, 88, 65, 0);
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transition: 0.1s;
+}
+.card-add h6{
+    text-align: center;  
+    font-size: 15px;
+    line-height:165px;
+}
+.card.none{
+    box-shadow:none;
+}
+.card-add:hover{
+    
+    color: rgba(42, 88, 65, 0.356);
+    border-radius: 5px;
+    border: 3px dotted rgba(42, 88, 65, 0.356);
+    cursor: pointer;
+}
+
+
+  

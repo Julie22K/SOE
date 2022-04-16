@@ -1,0 +1,28 @@
+.filter,
+.sort,
+.search {
+    margin: 5px;
+}
+
+.filter-sort button {
+    margin: 5px;
+    padding: 5px;
+    border: 0px;
+    background-color: var(--main2);
+    color: var(--main);
+    border-radius: 2px;
+}
+
+.filter-sort button.active {
+    background-color: var(--main);
+    color: var(--main);
+}
+
+.filter-sort button:hover {
+    background-color: var(--main3);
+    color: var(--white);
+}
+
+.filter-sort {
+    width: 100%;
+}

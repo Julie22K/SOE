@@ -1,0 +1,7 @@
+tr.tr-product {
+    display: none;
+}
+
+tr.tr-product.show {
+    display:table-row;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../CSS/modal.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="open">open</button>
+
+
+    <div id="Modal" class="modal">
+        <span class="close">&times;</span>
+        <!-- Modal content -->
+        <div class="modal-content modal-info" id=modal-content>
+            <div class="info-circles">
+                <label for="kkal">KKAL</label>
+                <div class="progress" id="kkal" style="height:15px;">
+                    <div class="progress-bar" role="progressbar" style="background-color: #c76262;width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="background-color: #59b474;width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="background-color: #5086b8;width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <label for="vit">Vit</label>
+                <div class="progress" id="vit" style="height:15px;">
+                    <div class="progress-bar" role="progressbar" style="background-color: #736AAA;width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+                <label for="min">Min</label>
+                <div class="progress" id="min" style="height:15px;">
+                    <div class="progress-bar" role="progressbar" style="background-color: #736AAA;width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+                
+            </div>
+            <div class="info-data">
+                <div class="text">Weight</div>
+                <div class="text">Price</div>
+                <div class="text">Water</div>
+                <div class="text">Cellulose</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("Modal");
+        var span = document.getElementsByClassName("close")[0];
+        var button = document.getElementById("open");
+
+        button.onclick = function(){
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

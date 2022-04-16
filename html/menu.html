@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="CSS/index.css" type="text/css" />
+<link rel="stylesheet" href="CSS/navbar.css" type="text/css" />
+<link rel="stylesheet" href="CSS/icons.css" type="text/css" />
+<link rel="stylesheet" href="CSS/checkbox.css" type="text/css" />
+
+<link rel="shortcut icon" href="image/main_icon.png" type="image/jpg">
+
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+<!-- comment - ctrl+c+k -->
+<!-- kkk -->
+<!-- select2 -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="CSS/menu.css" type="text/css" />
+    <title>Menu of week</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                        <span class="title">SOE</span>
+                    </a>
+                </li>
+                <li class="pointer">
+                    <a href="menu.php">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Menu Of Week</span>
+                    </a>
+                </li>
+                <li class="pointer">
+                    <a href="shoplist.php">
+                        <span class="icon"><ion-icon name="basket-outline"></ion-icon></span>
+                        <span class="title">Shoping list</span>
+                    </a>
+                </li>
+                <li class="pointer">
+                    <a href="dishes.php">
+                        <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                        <span class="title">Dishes</span>
+                    </a>
+                </li>
+                <li class="pointer">
+                    <a href="products.php">
+                        <span class="icon"><ion-icon name="nutrition-outline"></ion-icon></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li class="pointer">
+                    <a href="persons.php">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Persons</span>
+                    </a>
+                </li>
+                <li class="pointer">
+                    <a href="setting.php">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- search -->
+                <div class="search">
+
+                    <p>Click on the cards to see its details.</p>
+                </div>
+            </div>
+            <div class="page">
+                <div class="container" id="menu">
+                    <div class="card-menu day time">
+                        <div class="innercard card static">
+                            <h6>Time/Day</h6>
+                        </div>
+                    </div>
+                    <div class="card-menu day"><div class="innercard"><h6>Monday</h6></div></div>
+                    <div class="card-menu day"><div class="innercard"><h6>Tuesday</h6></div></div>
+                    <div class="card-menu day"><div class="innercard"><h6>Wednesday</h6></div></div>
+                    <div class="card-menu day"><div class="innercard"><h6>Thursday</h6></div></div>
+                    <div class="card-menu day"><div class="innercard"><h6>Friday</h6></div></div>
+                    <div class="card-menu day"><div class="innercard"><h6>Saturday</h6></div></div>
+                    <div class="card-menu day"><div class="innercard"><h6>Sunday</h6></div></div>
+                    <div class="card-menu time"><div class="innercard"><h6>Breakfast</h6></div></div>
+                        <div class="card-menu dish">
+                            <ion-icon class="menu-ion" id="title" name="text-outline"></ion-icon>
+                                    <ion-icon class="menu-ion" id="info" name="stats-chart-outline"></ion-icon>
+                                    <ion-icon class="menu-ion" id="data" name="list-outline"></ion-icon>
+                                    <ion-icon class="menu-ion" id="edit" name="create-outline"></ion-icon>
+                                    <ion-icon class="menu-ion" id="delete" name="trash-outline"></ion-icon>
+                            <div class="innercard title">Omlet</div>
+                            <div class="innercard data">eggs,milk,tomato</div>
+                            <div class="innercard info">Weight:15g Price:15$</div>
+                    </div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu dish">
+                            <ion-icon id="title" name="text-outline"></ion-icon>
+                            <ion-icon id="info" name="stats-chart-outline"></ion-icon>
+                            <ion-icon id="data" name="list-outline"></ion-icon>
+                            <div class="innercard title">Sandwich with tina</div>
+                            <div class="innercard data">bread,cucumber,tuna</div>
+                            <div class="innercard info">Weight:80g Price:2$</div>
+                        </div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                    <div class="card-menu time"><div class="innercard"><h6>Snack(1)</h6></div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu dish"><div class="innercard title">orange juice</div>
+                        <div class="innercard data">water,orange</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                    <div class="card-menu time"><div class="innercard"><h6>Lunch</h6></div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu dish"><div class="innercard title">salad</div>
+                        <div class="innercard data">oil,tomato,corn,onion</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                    <div class="card-menu time"><div class="innercard"><h6>Snack(2)</h6></div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu dish"><div class="innercard title">Cheesecake</div>
+                        <div class="innercard data">cheese,flour,eggs</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                    <div class="card-menu time"><div class="innercard"><h6>Dinner</h6></div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                        <div class="card-menu dish"><div class="innercard title">Fish</div>
+                        <div class="innercard data">Fish,carrot,lemon</div></div>
+                        <div class="card-menu"><div class="innercard add">Add</div></div>
+                            
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let divt = document.querySelectorAll('.dish ion-icon#title');
+        let divi = document.querySelectorAll('.dish ion-icon#info');
+        let divd = document.querySelectorAll('.dish ion-icon#data');
+
+        function showtitle() {
+            divt.forEach((item) =>
+                item.classList.remove('active'));
+            divi.forEach((item) =>
+                item.classList.remove('active'));
+            divd.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+
+        function showinfo() {
+            divt.forEach((item) =>
+                item.classList.remove('active'));
+            divi.forEach((item) =>
+                item.classList.remove('active'));
+            divd.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        function showdata() {
+            divt.forEach((item) =>
+                item.classList.remove('active'));
+            divi.forEach((item) =>
+                item.classList.remove('active'));
+            divd.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        divt.forEach((item) =>
+            item.addEventListener('click', showtitle));
+        divi.forEach((item) =>
+            item.addEventListener('click', showinfo));
+        divd.forEach((item) =>
+            item.addEventListener('click', showdata));
+    </script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/setting.js"></script>
+    <script src="js/color.js"></script>
+    <script src="js/dishes.js"></script>
+
+</body>
+
+</html>

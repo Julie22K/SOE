@@ -1,0 +1,79 @@
+.card.products{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    overflow:hidden;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 10px 30px;
+}
+thead th{
+    height: 30px;
+    /* font-weight:bolder; */
+    border-bottom: 1px solid rgb(34, 33, 33);
+}
+tr{
+    text-align: center;
+    vertical-align: middle;
+}
+td, th {
+  padding: 0.2rem;
+}
+thead tr:hover{
+    background-color:var(--main2);
+}
+tr:hover{
+    background-color:var(--hover);
+}
+.card-dish table{
+    border-bottom: 1px solid var(--black1);
+}
+
+p.addproduct{
+    color:rgba(98, 98, 129, 0);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p.addproduct:hover{
+    cursor: pointer;
+    color: rgba(42, 88, 65, 0.356);
+    background-color: white;
+
+}
+td.setting{
+    width:15px;
+}
+th.name,
+td.name{
+    float: left;
+}
+table.menu{
+    width: auto;
+    height: 180px;
+}
+
+table.menu tr:hover{
+    background-color: white !important;
+}
+
+table.menu td:hover
+{
+    border-radius: 3px;
+    cursor: pointer;
+    /* background-color: rgba(137, 43, 226, 0.445); */
+}
+table.menu th
+{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

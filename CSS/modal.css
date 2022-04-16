@@ -1,0 +1,94 @@
+@import "progress";
+/* The Modal (background) */
+.modal {
+  font-family: sans-serif;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 500px; /* Could be more or less, depending on screen size */
+    max-height: 400px;
+    min-width: 200px;
+    min-height: 150px;
+    width: auto;
+    height: auto;
+    overflow:auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  img.product{
+      /*margin: 20px;
+      padding: 20px;*/
+      border:3px solid #888;
+      height: 300px;
+      width: inherit;
+
+  }
+  .modal-info{
+    width: 300px;
+    height: 245px;
+    background-color: #B3C0D4;
+    color: #736AAA;
+    position: relative;
+  }
+  .info-circles{
+    left: 15px;
+    right:15px;
+    top:15px;
+    height: 135px;
+    position: absolute;
+  }
+  .info-circles>div{
+    left: 5px;
+    right:5px;
+  }
+  .info-data{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:space-around;
+    font-size: 18px;
+    font-weight: bold;
+    left: 15px;
+    right:15px;
+    bottom:15px;
+    width: 270px;
+    height: 80px;
+    position: absolute;
+  }
+  p#openmodal:hover{
+    cursor: pointer;
+    color: rgb(45, 45, 151);
+    text-decoration: underline;
+  }
+
+
+  
