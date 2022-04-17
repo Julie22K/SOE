@@ -1,14 +1,5 @@
-let pallete,clr,brd,fr,bc;//green
+let pallete,clr,brd,fr,bc;
 function theme(color,border,front,back){
-    clr=color;
-    brd=border;
-    fr=front;
-    bc=back;
-    changetheme(clr,brd,fr,bc);
-    var pallete=[clr,brd,fr,bc];
-    savetheme(pallete);
-}
-function changetheme(color,border,front,back){
     if(color=='#F5F5F5') document.documentElement.style.setProperty("--text",'#000000')
     else document.documentElement.style.setProperty("--text",'white')
 
@@ -18,6 +9,9 @@ function changetheme(color,border,front,back){
     document.documentElement.style.setProperty("--main3",border)
     document.documentElement.style.setProperty("--front",front)
     document.documentElement.style.setProperty("--back",back)
+
+    var pallete=[color,border,front,back];
+    savetheme(pallete);
 }
 function savetheme(pallete){
     const pallet=JSON.stringify(pallete)
@@ -37,11 +31,7 @@ $(document).ready(function(){
 
     function activeLink(){
         list.forEach((item) => item.classList.remove('active'));
-        this.classList.add('active');  
-    
+        this.classList.add('active');
     }
-
     list.forEach((item) => item.addEventListener('click',activeLink));
 })
-
-
